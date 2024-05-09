@@ -1,1 +1,1 @@
-
+A k-d tree, or k-dimensional tree, is a binary tree data structure used for efficient multidimensional search. It organizes points in a k-dimensional space, facilitating operations like nearest neighbor search and range search.
