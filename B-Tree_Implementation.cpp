@@ -6,17 +6,17 @@
 using namespace std;
 
 struct Node {
-    int *keys;
+    int *keys; //multiple keys stored in arrays
     Node **childPointers;
-    int numKeys;
-    bool leaf;
+    int numKeys; //number of keys in that node
+    bool leaf; //to check if it's a leaf node element - T/F
 };
 
 Node *createNode(int degree, bool leaf) {
     Node *node = new Node;
     node->numKeys = 0;
     node->leaf = leaf;
-    node->keys = new int[2 * degree - 1];
+    node->keys = new int[2 * degree - 1]; //initialize in an array
     node->childPointers = new Node *[2 * degree];
     for (int i = 0; i < 2 * degree; i++) {
         node->childPointers[i] = NULL;
@@ -120,7 +120,7 @@ Node *insert(Node *root, int key, int degree){
     }
 }
 
-void traverse(Node *root) {
+void traverse(Node *root) { //inorder
     if (root != NULL) {
         for (int i = 0; i < root->numKeys; i++) {
             traverse(root->childPointers[i]);
