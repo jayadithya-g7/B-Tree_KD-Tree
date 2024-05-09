@@ -59,3 +59,66 @@ Optimization Techniques :-
 Various optimization techniques can be employed to improve the performance of KD trees, such as median splitting, balancing strategies, and pruning methods.
 
 KD trees are widely used in applications such as spatial indexing, nearest neighbor search, and range search in multidimensional data sets, including computational geometry, machine learning, and computer graphics.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Implementations :-
+----------------
+
+Insertion :-
+------------
+
+Select a dimension to split the data points.
+
+Find the median value in the chosen dimension.
+
+Split the data points into two groups based on the median value.
+
+Create a node in the tree, storing the median value and the chosen dimension.
+
+Repeat steps 1–3 recursively for each group of data points.
+
+Searching :-
+-----------
+
+Start with the root node.
+
+Move down the tree recursively, going left or right depending on whether the point is less than or greater than the current node in the split dimension.
+
+Once you reach a leaf node, check the node point and save it as the "current best" if the distance is better than the "current best".
+
+Unwind the recursion of the tree, performing the following steps at each node.
+
+Deletion :-
+-------------
+
+Find the Node to Delete :-
+---------------------------
+
+First, you need to locate the node containing the point you want to delete from the k-d tree.
+
+Identify the Replacement Node :-
+----------------------------------
+
+Determine a suitable replacement node for the one being deleted. This replacement node can be selected in different ways depending on the implementation, such as choosing the predecessor, successor, or finding the closest point in the subtree.
+
+Replace Node :-
+----------------
+
+Once the replacement node is identified, replace the node to be deleted with the replacement node. This maintains the structure of the tree.
+
+Update Tree :-
+--------------
+
+After replacing the node, update the tree as necessary to ensure it remains balanced and satisfies the properties of a k-d tree. This may involve rebalancing the tree or adjusting pointers to maintain the appropriate structure.
+
+Recursively Delete: 
+-------------------
+
+If the replacement node had children, recursively delete those nodes as well, following the same deletion rules.
+
+Rebalance Tree (if necessary): Depending on the deletion strategy and the rebalancing scheme of the k-d tree, you may need to perform additional operations to rebalance the tree and maintain its efficiency. This step ensures that the tree remains balanced and maintains its search performance.
+
+
+
+
