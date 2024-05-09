@@ -123,6 +123,9 @@ Rebalance Tree (if necessary) :-
 
 Depending on the deletion strategy and the rebalancing scheme of the k-d tree, you may need to perform additional operations to rebalance the tree and maintain its efficiency. This step ensures that the tree remains balanced and maintains its search performance.
 
+Source: https://media.geeksforgeeks.org/wp-content/uploads/K-Dimensional-Tree-find-minimum.png
+
+
 
 
 
