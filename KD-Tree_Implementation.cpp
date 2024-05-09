@@ -28,10 +28,7 @@ class kdtree{
     private:
       node *r;
     
-    double distance(struct point val1,struct point val2){
-        return sqrt(((val1.x - val2.x)*(val1.x - val2.x)) + ((val1.y - val2.y)*(val1.y - val2.y)));
-    }
-
+   
 
     public:
     kdtree(int a,int b){
