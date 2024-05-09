@@ -6,8 +6,8 @@
 using namespace std;
 
 struct point{
-    int x;
-    int y;
+    int x; //a=x coordinate
+    int y; //b=y cooridnate
 };
 
 class node{
@@ -26,23 +26,23 @@ class node{
 
 class kdtree{
     private:
-      node *r;
+      node *r; //root created
     
    
 
     public:
-    kdtree(int a,int b){
+    kdtree(int a,int b){ //for root
         r=new node(a,b);
     }
-    node* getroot(){
+    node* getroot(){ //for returning root value
         return r;
     }
-    void insert(node *root,int val1,int val2,int depth){
-            node *newnode=new node(val1,val2);
-            if(depth%2==0){
+    void insert(node *root,int val1,int val2,int depth){ //val1=x coordinate, val2=y-cooridnate
+            node *newnode=new node(val1,val2); //based on the values, it creates a node
+            if(depth%2==0){ //if depth is even, comparison occurs x coordinate wise, if depth is odd, comparison occurs y-coordinate wise
                 if(val1<=root->key.x){
                     if(root->left==NULL){
-                        root->left=newnode;
+                        root->left=newnode; //like similar to binary tree insertion
                     }
                     else{
                         insert(root->left,val1,val2,depth+1);
@@ -58,7 +58,7 @@ class kdtree{
                 }
 
             }
-            else{
+            else{ //comparison with y-coordinate
                 if(val2<=root->key.y){
                     if(root->left==NULL){
                         root->left=newnode;
@@ -80,7 +80,7 @@ class kdtree{
 
     }
 
-    node* findmin(node* root){
+    node* findmin(node* root){ //left most node is minm node
          while(root->left!=NULL){
             root=root->left;
          }
@@ -161,7 +161,7 @@ class kdtree{
        return root;
     }
 
-    void traverse(node *root){
+    void traverse(node *root){ //pre-order traversal
           if(root==NULL){
             return;
           }
@@ -230,8 +230,8 @@ class kdtree{
 
 int main(){
    int i=0;
-   kdtree *tree;
-   node *root;
+   kdtree *tree; //initiliase a pointer to point to the tree
+   node *root;  //initiliase a pointer to point to the root
    while(1){
     if(i==0){
         cout<<"1-CREATE"<<endl;
