@@ -27,9 +27,9 @@ class kdtree{
     private:
       node *r;
     
-    double distance(struct point val1,struct point val2){
+    double distance(struct point val1,struct point val2){ //distance formula check to spot the nearest neighbour among all the points in the kd tree
         return sqrt(((val1.x - val2.x)*(val1.x - val2.x)) + ((val1.y - val2.y)*(val1.y - val2.y)));
-    }
+    } 
 
 
     public:
