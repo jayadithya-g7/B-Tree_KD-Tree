@@ -1,0 +1,59 @@
+KD Tree
+-------
+
+Inserted 10,20 for the root and thus created the KD Tree . 
+
+Time taken for creation of root node 10,20 is 0.00000016 nanoseconds
+
+Inserted 10000,42068
+
+Time taken for insertion of node  10000,42068 is 0.000003 nanoseconds
+
+Traversed 
+
+x:10 y:20
+x:10000 y:42068
+
+Inserted 99999999,15
+
+Time taken for insertion of node  10000,42068 is 0.000003 nanoseconds
+
+Inserted 45,50 
+
+Time taken for insertion of node  10000,42068 is 0.000004 nanoseconds
+
+Traversed 
+
+x:10 y:20
+x:10000 y:42068
+x:99999999 y:15
+x:45 y:50
+Time taken for traversal of tree is 0.000033 nanoseconds
+
+Inserted -999,-1
+
+Time taken for insertion of node  -999,-1 is 0.000003 nanoseconds
+
+Print 2D
+--------
+
+
+          10000 42068
+
+                    99999999 15
+
+                              45 50
+
+10 20
+
+          -999 -1
+
+Time taken for printing tree in 2D is 0.000043 nanoseconds
+
+Inserted 45,55
+
+
+Deleted  45, 55
+Time taken for deletion of node 45,55 is 0.000009 nanoseconds
+
+Exited the Program
