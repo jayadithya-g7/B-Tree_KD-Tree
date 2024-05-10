@@ -51,3 +51,34 @@ Kd-tree Application in 2D format:
          2 3
 
 Time taken for printing tree in 2D is 0.00000001 nanoseconds
+
+
+
+
+//Let's check the boundary conditions now
+<------------------------------------------>
+
+ENTER YOUR CHOICE:1 [insertion/creation of root node here]
+enter values:10 20
+Time taken for creation of root node 10,20 is 0.00000013 nanoseconds
+
+ENTER YOUR CHOICE:1 [insert]
+enter values:30 40
+Time taken for insertion of node  30,40 is 0.000002 nanoseconds
+
+ENTER YOUR CHOICE:2[delete]
+enter values:35 46
+Time taken for deletion of node 35,46 is 0.000000 nanoseconds
+
+//so we tried deleting a node, that's not even present in the tree, and the operation is handled in 0 nanosecs, so the boundary conditions are efficiently handled in the operation
+
+//perform the traverse operation now
+
+ENTER YOUR CHOICE:3
+x:10 y:20
+x:30 y:40
+Time taken for traversal of tree is 0.000027 nanoseconds
+
+//The boundary conditions are not disturbing the run time of the traversal function
+//Therefore boundary conditions are handled
+
