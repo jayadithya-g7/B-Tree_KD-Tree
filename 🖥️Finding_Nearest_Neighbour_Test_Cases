@@ -1,0 +1,53 @@
+Application for kd-tree :-
+------------------------
+
+Inserted 5,10 for the root and thus created the KD Tree . 
+
+Time taken for creation of root node 5,10 is 0.00000001 nanoseconds
+
+Inserted 2,3
+
+Time taken for insert node 2,3 is 0.000001 nanoseconds
+
+Inserted  8,12
+
+Time taken to insert node 8,12 is 0.000001 nanoseconds
+
+Inserted  7,6
+
+Time taken to insert node 7,6 is 0.000001 nanoseconds
+
+Deleted  8,12
+
+Time taken for deletion of node 8,12 is 0.00000001 nanoseconds
+
+Values to find nearest neighbour :5 10
+Nearest Neighbour: 5,10
+Time taken for finding nearest node to 5,10 is 0.000000 nanoseconds
+
+Kd-tree Application traversal:
+
+x:5 y:10
+x:2 y:3
+x:7 y:6
+
+Time taken for traversal of tree is 0.00000001 nanoseconds
+
+Kd-tree Search:
+Values to be searched: 2,3
+
+VALUE FOUND
+
+Time taken for searching node 2,3 is 0.00000001 nanoseconds
+
+
+Kd-tree Application in 2D format:
+--------------------------------
+         
+         7 6
+
+5 10
+
+         2 3
+
+Time taken for printing tree in 2D is 0.00000001 nanoseconds
