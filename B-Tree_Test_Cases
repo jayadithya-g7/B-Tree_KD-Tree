@@ -1,0 +1,52 @@
+#B-Tree(Test-cases)
+-------------------
+
+Inserted the degree of 2 for the B-tree
+
+Inserted 5
+
+Time taken for insert node 5 is 0.000001 nanoseconds
+
+Inserted  3
+
+Time taken to insert node 3 is 0.000001 nanoseconds
+
+Inserted  7
+
+Time taken to insert node 7 is 0.000001 nanoseconds
+
+Inserted  2
+
+Time taken to insert node 2 is 0.000001 nanoseconds
+
+Inserted  4
+
+Time taken to insert node 4 is 0.000001 nanoseconds
+
+Inserted  6
+
+Time taken to insert node 6 is 0.000001 nanoseconds
+
+Inserted  8
+
+Time taken to insert node 8 is 0.000001 nanoseconds
+
+B tree search:
+Values to be searched:3
+Key found
+Time taken to search node 3 is 0.000000 nanoseconds
+
+B-tree traversal:
+2 3 4 5 6 7 8
+Time taken for B-Tree traversal is 0.000002 nanoseconds
+
+
+B-tree in 2D format:
+              5
+          3
+              4
+2
+              7
+          6
+              8
+Time taken for 2D printing is 0.000001 nanoseconds
