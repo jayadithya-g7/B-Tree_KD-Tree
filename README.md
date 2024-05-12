@@ -4,7 +4,7 @@ Hey!, Welcome to the DS project repository of team <B-Tree_KD-Tree> under Cybers
 
 Just a short intro before diving deep into it;😉
 
-Find the walkthrough here:-
+Find the walkthrough here:- (basically our team's project presentation that's been uploaded on youtube)
 --------------------------
 
 https://www.youtube.com/watch?v=CTcz1ENLuRc
